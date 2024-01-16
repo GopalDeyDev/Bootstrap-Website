@@ -1,5 +1,35 @@
-*{
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    --bs-gutter-x: 0 !important;
+    --bs-gutter-y: 0 !important;
 }
+
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    /* border: 2px solid red; */
+    position: absolute;
+    z-index: 5;
+}
+
+.overlay:hover {
+    background-color: yellow;
+    opacity: 0.5;
+}
+
+.px-10{
+    padding-left :5rem;
+    padding-right: 5rem;
+}
+
